@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import SideBar from "../../layout/SideBar";
+import SideBar from "../layout/Sidebar";
 import MyBlogs from "../miniComponents/MyBlogs";
 import MyProfile from "../miniComponents/MyProfile";
 import CreateBlog from "../miniComponents/CreateBlog";
