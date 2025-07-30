@@ -35,7 +35,9 @@ app.use('/api/v1/blog', blogRouter); // Blog routes (if you have a blogRouter)
 
 
 dbConnection(); // Establish database connection
-
+app.get("/", (req, res) => {
+  res.send("Blog Platform backend is live 🚀");
+});
 
 app.use(errorMiddleware); // Use error handling middleware
 
