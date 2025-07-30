@@ -11,12 +11,12 @@ import fileUpload from "express-fileupload";
 
 const app = express();
 dotenv.config({ path: './config/config.env' });// yha config.env file ka path hai jha pr env ko store kiya h
-// app.use(cors());//middleware for enabling CORS
-app.use(cors({
-    origin: [process.env.FRONTEND_URL], // Allow all origins
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow specific methods
-    credentials: true // Allow credentials
-}));
+app.use(cors());//middleware for enabling CORS
+// app.use(cors({
+//     origin: [process.env.FRONTEND_URL], // Allow all origins
+//     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow specific methods
+//     credentials: true // Allow credentials
+// }));
 
 app.use(cookieParser());//middleware for parsing cookies
 app.use(express.json());//middleware for parsing JSON bodies
